@@ -5,6 +5,7 @@ import android.app.FragmentTransaction;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity implements ColourFragment.onClickItemChanged {
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements ColourFragment.on
         }
         if (onCheck.equals("GREEN")){
             relativeLayout.setBackgroundColor(Color.GREEN);
+            Log.d("Local",onCheck);
         }
 
 
